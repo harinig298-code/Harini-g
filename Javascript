@@ -1,0 +1,25 @@
+3. script.js
+
+// Smooth scroll to sections
+function scrollToSection(id) {
+  document.getElementById(id).scrollIntoView({ behavior: "smooth" });
+}
+
+// Simple animation effect on scroll
+window.addEventListener("scroll", () => {
+  const elements = document.querySelectorAll("section, .project-card, .skills-list li");
+  elements.forEach(el => {
+    const rect = el.getBoundingClientRect();
+    if (rect.top < window.innerHeight - 50) {
+      el.style.opacity = 1;
+      el.style.transform = "translateY(0)";
+    }
+  });
+});
+
+// Initial state for animations
+document.querySelectorAll("section, .project-card, .skills-list li").forEach(el => {
+  el.style.opacity = 0;
+  el.style.transform = "translateY(50px)";
+  el.style.transition = "all 1s ease";
+});
