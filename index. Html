@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WebCraft 2026 Workshop</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f9;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+        }
+
+        h1, h2 {
+            text-align: center;
+            color: #2c3e50;
+        }
+
+        .event-info {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+        }
+
+        .event-info p {
+            line-height: 1.6;
+        }
+
+        .form-section {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        form label {
+            font-weight: bold;
+        }
+
+        form input, form select, form textarea {
+            width: 100%;
+            padding: 8px;
+            margin: 8px 0 15px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        form input[type="submit"] {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        form input[type="submit"]:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <h1>WebCraft 2026 Workshop</h1>
+    <h2>Department of Computer Application</h2>
+
+    <!-- Event Information Section -->
+    <div class="event-info">
+        <h3>Event Details</h3>
+        <p><strong>Event Name:</strong> WebCraft 2026 – Modern Web Development Workshop</p>
+        <p><strong>Organized By:</strong> Department of Computer Application</p>
+        <p><strong>Date:</strong> 15 March 2026</p>
+        <p><strong>Time:</strong> 9:30 AM – 4:00 PM</p>
+        <p><strong>Venue:</strong> Computer Lab – Block A</p>
+        <p><strong>Topics Covered:</strong></p>
+        <ul>
+            <li>HTML5 Fundamentals</li>
+            <li>CSS3 Styling & Layout</li>
+            <li>JavaScript Basics</li>
+            <li>Building Responsive Websites</li>
+        </ul>
+        <p><strong>Registration Fee:</strong> Free for Students</p>
+        <p><strong>Contact:</strong> webcraft2026@college.edu | +91 9876543210</p>
+    </div>
+
+    <!-- Registration Form Section -->
+    <div class="form-section">
+        <h3>Registration Form</h3>
+
+        <form action="#" method="post">
+
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Mobile Number:</label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required>
+
+            <label for="department">Department:</label>
+            <select id="department" name="department" required>
+                <option value="">-- Select Department --</option>
+                <option>Computer Application</option>
+                <option>Computer Science</option>
+                <option>Information Technology</option>
+                <option>Electronics</option>
+            </select>
+
+            <label for="year">Year of Study:</label>
+            <select id="year" name="year" required>
+                <option value="">-- Select Year --</option>
+                <option>1st Year</option>
+                <option>2nd Year</option>
+                <option>3rd Year</option>
+                <option>Final Year</option>
+            </select>
+
+            <label for="message">Why do you want to join this workshop?</label>
+            <textarea id="message" name="message" rows="4"></textarea>
+
+            <input type="submit" value="Register Now">
+
+        </form>
+    </div>
+
+</div>
+
+</body>
+</html>
